@@ -2,9 +2,11 @@
 import { useParams } from "next/navigation";
 
 function Page() {
-  const params = useParams();
+    const params = useParams();
   console.log(params);
   return <div>{JSON.stringify(params)}</div>;
 }
 
 export default Page;
+
+export const dynamic = "force-static";
