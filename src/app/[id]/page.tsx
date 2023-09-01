@@ -1,9 +1,10 @@
 "use client";
-export const dynamic = "force-static";
+import { useParams } from "next/navigation";
 
-function Page({ params: { id } }: { params: { id: string } }) {
-  console.log(id);
-  return <div>{id}</div>;
+function Page() {
+  const params = useParams();
+  console.log(params);
+  return <div>{JSON.stringify(params)}</div>;
 }
 
 export default Page;
