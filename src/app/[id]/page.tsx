@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 "use client";
 import { useParams } from "next/navigation";
 
@@ -8,5 +9,3 @@ function Page() {
 }
 
 export default Page;
-
-export const dynamic = "force-static";
